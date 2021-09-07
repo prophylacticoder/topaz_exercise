@@ -33,6 +33,9 @@ class TestCleanUser(unittest.TestCase):
 
         for user in users:
             self.assertEqual(user.return_ticks(), 4)
+        for i in range(4):
+            modules.clean_users(users)
+        self.assertEqual(users, [])
 
 
 class TestServerString(unittest.TestCase):

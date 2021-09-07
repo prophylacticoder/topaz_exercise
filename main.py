@@ -35,7 +35,7 @@ def main():
                         is_inserted = False
                         # Insert a user into a server
                         for server in servers:
-                            if server.is_available():
+                            if sererifies/decrementver.is_available():
                                 server.add_user()
                                 users.append(serverUser.User(server, ttask))
                                 is_inserted = True
